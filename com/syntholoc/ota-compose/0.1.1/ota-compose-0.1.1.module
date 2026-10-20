@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.syntholoc",
+    "module": "ota-compose",
+    "version": "0.1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.syntholoc",
+          "module": "ota",
+          "version": {
+            "requires": "0.1.1"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.6.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ota-compose-0.1.1.aar",
+          "url": "ota-compose-0.1.1.aar",
+          "size": 6647,
+          "sha512": "3d63f780c3e731543570e3c6a006a9b0d8d0a1e291acf9245c323a72e98ae0a7d49a8b53d95653068c8a947d7907666dff7680119467977c5dda7e5c140c6759",
+          "sha256": "c7f7c84cefab9b4df2fde8c87ec037046733e7c318b1b13c1a21341af62c8479",
+          "sha1": "4be3943a2daa21d933d99a55fd18940124d0d998",
+          "md5": "7746d87f88173a0a6b5668eefba17a1d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.6.8"
+          }
+        },
+        {
+          "group": "com.syntholoc",
+          "module": "ota",
+          "version": {
+            "requires": "0.1.1"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.6.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ota-compose-0.1.1.aar",
+          "url": "ota-compose-0.1.1.aar",
+          "size": 6647,
+          "sha512": "3d63f780c3e731543570e3c6a006a9b0d8d0a1e291acf9245c323a72e98ae0a7d49a8b53d95653068c8a947d7907666dff7680119467977c5dda7e5c140c6759",
+          "sha256": "c7f7c84cefab9b4df2fde8c87ec037046733e7c318b1b13c1a21341af62c8479",
+          "sha1": "4be3943a2daa21d933d99a55fd18940124d0d998",
+          "md5": "7746d87f88173a0a6b5668eefba17a1d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ota-compose-0.1.1-sources.jar",
+          "url": "ota-compose-0.1.1-sources.jar",
+          "size": 1447,
+          "sha512": "1d2d87243222c90b330d1c25d6d47f8e5f5281db68b2de7b903c861c6df102ad18ae0b10e5027a982cd3c2c1b191c6890091c13f54b2e09ca9050835a4ec329b",
+          "sha256": "688e1dc35aad7fcd1ac60c63d66491c188d06d9622cbcd65d8bf0d8f06e97860",
+          "sha1": "43a2c634d075ce16202c850b146c095800efc3bc",
+          "md5": "5dca29c23c933bb8687fe87fb04ab64a"
+        }
+      ]
+    }
+  ]
+}
