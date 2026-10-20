@@ -1,0 +1,11 @@
+<resources>
+    <string name="ota_title">Bundled title</string>
+    <string name="ota_hint">Bundled hint</string>
+    <string name="ota_removed">Bundled removed</string>
+    <string name="ota_format">Bundled %1$s</string>
+    <plurals name="ota_count">
+        <item quantity="one">%d bundled item</item>
+        <item quantity="other">%d bundled items</item>
+    </plurals>
+    <string-array name="ota_array"><item>Bundled first</item></string-array>
+</resources>
