@@ -5,7 +5,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.syntholoc"
-version = providers.gradleProperty("sdkVersion").getOrElse("0.1.0")
+version = providers.gradleProperty("sdkVersion").getOrElse("0.1.1")
 android {
     namespace = "com.syntholoc.ota.compose"
     compileSdk = 35
@@ -17,7 +17,7 @@ android {
 }
 dependencies {
     api(project(":"))
-    implementation("androidx.compose.runtime:runtime:1.6.8")
+    api("androidx.compose.runtime:runtime:1.6.8")
     implementation("androidx.compose.ui:ui:1.6.8")
     androidTestImplementation("androidx.compose.foundation:foundation:1.6.8")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.6.8")

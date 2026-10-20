@@ -4,7 +4,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.syntholoc"
-version = providers.gradleProperty("sdkVersion").getOrElse("0.1.0")
+version = providers.gradleProperty("sdkVersion").getOrElse("0.1.1")
 android {
     namespace = "com.syntholoc.ota"
     compileSdk = 35

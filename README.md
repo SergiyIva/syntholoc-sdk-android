@@ -16,9 +16,9 @@ maven {
 Keep `google()` and `mavenCentral()` for Android/Kotlin dependencies. Then add:
 
 ```kotlin
-implementation("com.syntholoc:ota:0.1.0")
+implementation("com.syntholoc:ota:0.1.1")
 // Optional:
-implementation("com.syntholoc:ota-compose:0.1.0")
+implementation("com.syntholoc:ota-compose:0.1.1")
 ```
 
 [Mobile integration guide (Russian)](INTEGRATION_RU.md) includes client setup,
