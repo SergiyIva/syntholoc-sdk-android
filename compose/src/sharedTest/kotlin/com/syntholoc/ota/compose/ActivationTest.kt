@@ -4,7 +4,9 @@ import androidx.compose.foundation.text.BasicText
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
-import androidx.test.platform.app.InstrumentationRegistry
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.syntholoc.ota.OtaClient
 import com.syntholoc.ota.OtaConfig
 import java.io.File
@@ -18,7 +20,9 @@ import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
+import org.junit.runner.RunWith
 
+@RunWith(AndroidJUnit4::class)
 class ActivationTest {
     @get:Rule val compose=createComposeRule()
     @Test fun candidateDoesNotRenderUntilActivationAndClearReturnsToBundled() {
@@ -36,7 +40,7 @@ class ActivationTest {
                 }
             } catch(_:java.net.SocketException) {if(!server.isClosed)throw IllegalStateException("origin closed unexpectedly")}
         }
-        val directory=File(InstrumentationRegistry.getInstrumentation().targetContext.cacheDir,"ota-compose-${System.nanoTime()}")
+        val directory=File(ApplicationProvider.getApplicationContext<Context>().cacheDir,"ota-compose-${System.nanoTime()}")
         val client=OtaClient(OtaConfig("http://127.0.0.1:${server.localPort}","dist",catalogVersion="v1",localeKey="en",bundles=setOf("app")),directory)
         try {
             val prefix="/ota/v1/distributions/dist/channels/production/"

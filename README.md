@@ -16,9 +16,9 @@ maven {
 Keep `google()` and `mavenCentral()` for Android/Kotlin dependencies. Then add:
 
 ```kotlin
-implementation("com.syntholoc:ota:0.1.1")
+implementation("com.syntholoc:ota:0.1.2")
 // Optional:
-implementation("com.syntholoc:ota-compose:0.1.1")
+implementation("com.syntholoc:ota-compose:0.1.2")
 ```
 
 [Mobile integration guide (Russian)](INTEGRATION_RU.md) includes client setup,
@@ -33,9 +33,13 @@ publish translations: configure a distribution and channel separately in Synthol
 To build this standalone source checkout, install JDK 17 / Android SDK 35 and run:
 
 ```sh
-./gradlew testReleaseUnitTest assembleRelease lintRelease
+./gradlew testDebugUnitTest testReleaseUnitTest assembleRelease lintRelease
 ./gradlew connectedDebugAndroidTest # with an emulator/device attached
 ```
+
+Debug unit tests run resource and Compose behavior scenarios with Robolectric on API 24
+and 35, without an emulator. The same scenarios also run as instrumentation tests.
+Test resource fixtures are included only in debug builds.
 
 The SDK uses explicit providers and bundled fallback; it does not replace Android's
 global resource loader. New translations are activated explicitly after downloading.

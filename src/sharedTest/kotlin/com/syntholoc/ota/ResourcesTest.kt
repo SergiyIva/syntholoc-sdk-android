@@ -8,9 +8,9 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
+import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.syntholoc.ota.test.R
 import java.util.Locale
 import org.junit.Assert.*
 import org.junit.Test
@@ -18,7 +18,7 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class ResourcesTest {
-    private val context get()=InstrumentationRegistry.getInstrumentation().context
+    private val context get()=ApplicationProvider.getApplicationContext<Context>()
     private fun provider():OtaResources {
         val xml="""<resources>
             <string name="ota_title">Hello <b>bold</b> &amp; <i>italic</i></string>

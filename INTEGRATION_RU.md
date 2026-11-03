@@ -9,8 +9,8 @@
 SDK распространяются публично и не требуют доступа к приватному проекту Syntholoc,
 GitHub-аккаунта или токена для скачивания. Нативные пакеты не связаны с npm:
 
-- Android: готовые Maven-артефакты `com.syntholoc:ota:0.1.1` и
-  `com.syntholoc:ota-compose:0.1.1`, исходники и теги в
+- Android: готовые Maven-артефакты `com.syntholoc:ota:0.1.2` и
+  `com.syntholoc:ota-compose:0.1.2`, исходники и теги в
   [syntholoc-sdk-android](https://github.com/SergiyIva/syntholoc-sdk-android).
 - iOS: SwiftPM из [syntholoc-sdk-ios](https://github.com/SergiyIva/syntholoc-sdk-ios),
   продукты `SyntholocOTA` и `SyntholocOTASwiftUI`, версия `0.1.1`.
@@ -79,10 +79,10 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.syntholoc:ota:0.1.1")
+    implementation("com.syntholoc:ota:0.1.2")
 
     // Если используется Compose:
-    implementation("com.syntholoc:ota-compose:0.1.1")
+    implementation("com.syntholoc:ota-compose:0.1.2")
 }
 ```
 

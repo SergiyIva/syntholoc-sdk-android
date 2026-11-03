@@ -2,8 +2,8 @@
 
 ## Android
 
-Install the public Maven artifacts `com.syntholoc:ota:0.1.1` and optional
-`com.syntholoc:ota-compose:0.1.1` from
+Install the public Maven artifacts `com.syntholoc:ota:0.1.2` and optional
+`com.syntholoc:ota-compose:0.1.2` from
 `https://raw.githubusercontent.com/SergiyIva/syntholoc-sdk-android/maven`.
 No credentials or private repository access are needed. See the
 [mobile quickstart](INTEGRATION_RU.md) for Gradle configuration.
